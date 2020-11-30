@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo cp -rf ~/Downloads/public.zip /home/cordchat/
+#edit the location of files accordingly
 cd /home/cordchat/
 sudo unzip public.zip
 sudo cp -rf /usr/local/openresty/nginx/conf/nginx.conf nginx.conforg
