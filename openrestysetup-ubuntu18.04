@@ -63,7 +63,7 @@ php -i | grep -A 10 "^cassandra$"  or
 
 php -m
 
-Install openresty 1.15 from source 
+Install openresty 1.13 from source 
 -------------------------------------------------------
 
 reference : https://www.digitalocean.com/community/tutorials/how-to-use-the-openresty-web-framework-for-nginx-on-ubuntu-16-04
