@@ -174,8 +174,12 @@ sudo luarocks install lua-cassandra
 
 additional changes & files added 
 1.replaced default nginx.conf file from our custom one and edited username as ubuntu
-2.copied cassandra_manager.lua,servers.lua from our local /usr/local/openresty/lualib folder
-3.created sites.d folder under nginx folder and created custom file named rajeshlocal.download (custom file ,only changed the location of public folder )
+2.copied cassandra_manager.lua,servers.lua from our local /usr/local/openresty/lualib folder(It is recommended to copy entire lualib folder ,lua folder from the local system)
+Bydefaulut there will be no lua folder,need to be created only lualib & luajit folder is generated.We have to replace the default lualib folder with our custom one (location : /usr/local/openresty) 
+Note:If you forget to put luafolder & lualib ,application will not work
+
+3.created sites.d folder under nginx folder and created custom file named rajeshlocal.download (custom file ,only changed the location of public folder from fastcgi_param SCRIPT_FILENAME,root  )
+
 4.Found latest openrsty version is giving error.so installed openresty-1.13.6.2.tar.gz 15 & 17 not compatible
 Start fpm & openresty 
 ---------------------
